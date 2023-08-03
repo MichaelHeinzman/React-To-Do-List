@@ -3,7 +3,7 @@
 
 
 ## View To-Do List App
-[Click to Preview]([https://ninytwjwmm.us-east-1.awsapprunner.com/])
+[Click to Preview](https://ninytwjwmm.us-east-1.awsapprunner.com/)
 
 ## **Details**     
   Language : **JavaScript**
