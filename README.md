@@ -6,7 +6,8 @@
 [Click to Preview]([https://8urr7hhmpp.us-east-1.awsapprunner.com/](https://ninytwjwmm.us-east-1.awsapprunner.com/))
 
 ## **Details**     
-  Language : **JavaScript**     
+  Language : **JavaScript**
+  Styling: **TailwindCSS**
   Library : **React**     
   Framework : **Create React App**.   
   Deployed Using: **AWS App Runner**
