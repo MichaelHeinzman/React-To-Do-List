@@ -15,7 +15,7 @@ const TodoContextProvider = ({ children }) => {
   }
 
   const deleteItem = (itemToDelete) => {
-    setList((prevList) => prevList.filter((item) => item !== itemToDelete))
+    setList((prevList) => prevList.filter((item) => item.id !== itemToDelete.id))
   }
 
   const value = useMemo(() => {

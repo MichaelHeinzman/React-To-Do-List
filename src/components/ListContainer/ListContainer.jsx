@@ -16,9 +16,7 @@ const ListContainer = ({children}) => {
       {!showForm && <button
         className="w-1/5 sm:h-11 md:h-14 self-end shadow-[#2b2b2b0a] shadow-md font-semibold text-md text-[#000000] bg-[#ffffff] rounded-sm hover:bg-[#ffffff80]"
         onClick={onAddTodoClicked}
-      >
-        ADD ITEM
-      </button>
+      >ADD ITEM</button>
       }
       {showForm && <ListItemForm disableForm={() => setShowForm(false)}/>}
     </div>

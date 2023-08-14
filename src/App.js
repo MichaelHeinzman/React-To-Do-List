@@ -1,5 +1,5 @@
-import List from "./components/ListComponents/List";
-import ListContainer from "./components/ListComponents/ListContainer";
+import List from "./components/List/List";
+import ListContainer from "./components/ListContainer/ListContainer";
 
 function App() {
   return (

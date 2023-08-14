@@ -15,7 +15,7 @@ const ListItem = ({ item }) => {
   const onCancelClicked = () => setXClicked(false);
 
   return (
-    <div className="flex w-full h-full gap-1 shadow-md shadow-[#2c2c2c45]">
+    <div className="flex w-full h-full gap-1 shadow-md shadow-[#2c2c2c45]" data-testid="list-item">
       {/* Content */}
       <div className="w-4/5 flex flex-col justify-start h-full text-[#000000] bg-[#ffffff] rounded-sm p-1">
         <span className="font-semibold text-md">{title}</span>
