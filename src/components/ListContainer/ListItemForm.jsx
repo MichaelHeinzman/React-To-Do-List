@@ -75,7 +75,7 @@ const ListItemForm = ({ disableForm }) => {
           Submit
         </button>
         <button
-          className="w-1/2 self-center rounded-md bg-black p-2 text-sm font-semibold text-white hover:bg-red-400 hover:text-gray-200"
+          className="w-1/2 self-center rounded-md bg-black p-2 text-sm font-semibold text-white hover:bg-red-400"
           onClick={disableForm}
         >
           Cancel
