@@ -20,7 +20,7 @@ const ListItemForm = ({ disableForm }) => {
 
   return (
     <div
-      className="flex w-max flex-col gap-y-4 self-center rounded-md bg-[#949f9b] p-3 shadow-md shadow-[#3f3f3f4e]"
+      className="flex w-full flex-col gap-y-4 self-center rounded-md bg-[#4a4343] p-3 shadow-md shadow-[#3f3f3f4e]"
       data-testid="list-item-form"
     >
       <h3 className="text-center text-lg font-bold text-white">
@@ -53,7 +53,7 @@ const ListItemForm = ({ disableForm }) => {
       <div className="mb-6 flex-col gap-2">
         <div className="md:w-1/3">
           <label
-            className="mb-1 block pr-4 font-bold text-gray-200 md:mb-0 md:text-right"
+            className="mb-1 block pr-4 font-bold text-gray-200 md:mb-0 md:text-left"
             htmlFor="inline-password"
           >
             Description
@@ -71,15 +71,15 @@ const ListItemForm = ({ disableForm }) => {
         </div>
       </div>
 
-      <div className="flex gap-3 self-center">
+      <div className="flex w-full gap-3 self-center">
         <button
-          className="self-center rounded-md bg-gray-200 p-2 text-sm font-semibold text-green-400 hover:bg-green-400 hover:text-gray-200"
+          className="w-1/2 self-center rounded-md bg-gray-200 p-2 text-sm font-semibold text-green-400 hover:bg-green-400 hover:text-gray-200"
           onClick={onFormSubmit}
         >
           Submit
         </button>
         <button
-          className="self-center rounded-md bg-gray-200 p-2 text-sm font-semibold text-red-400 hover:bg-red-400 hover:text-gray-200"
+          className="w-1/2 self-center rounded-md bg-gray-200 p-2 text-sm font-semibold text-red-400 hover:bg-red-400 hover:text-gray-200"
           onClick={disableForm}
         >
           Cancel
