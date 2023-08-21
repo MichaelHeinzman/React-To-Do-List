@@ -15,7 +15,7 @@ const Content = () => {
         <motion.section
           key="content"
           className="absolute h-full w-full transition-all ease-in-out"
-          {...headContainerAnimation}y
+          {...headContainerAnimation}
         >
           <Navbar />
           <div className="flex h-full w-full grid-cols-1 p-4 md:grid-cols-3">
