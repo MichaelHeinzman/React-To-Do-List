@@ -9,7 +9,9 @@ const List = ({ list }) => {
       </div>
     );
 
-  return list?.map((item) => <ListItem key={item.id} item={item} />);
+  return list?.map((item, index) => (
+    <ListItem key={item.id} item={item} index={index} />
+  ));
 };
 
 export default List;

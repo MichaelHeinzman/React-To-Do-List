@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { useTodoContext } from "../../context/todo.context";
+import { motion } from "framer-motion";
+import { slideAnimation } from "../../config/motion";
 
-const ListItem = ({ item }) => {
+const ListItem = ({ item, index }) => {
   // Contexts
   const { deleteItem } = useTodoContext();
 
@@ -16,7 +18,11 @@ const ListItem = ({ item }) => {
   const onCancelClicked = () => setXClicked(false);
 
   return (
-    <div className="flex h-full w-full gap-1 " data-testid="list-item">
+    <motion.div
+      className="flex h-full w-full gap-1 "
+      data-testid="list-item"
+      {...slideAnimation(index % 2 === 0 ? "left" : "right")}
+    >
       {/* Content */}
       <button
         onClick={() => setClicked((prev) => !prev)}
@@ -51,7 +57,7 @@ const ListItem = ({ item }) => {
           )}
         </div>
       )}
-    </div>
+    </motion.div>
   );
 };
 
