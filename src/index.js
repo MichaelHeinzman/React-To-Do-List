@@ -10,5 +10,5 @@ root.render(
     <TodoContextProvider>
       <App />
     </TodoContextProvider>
-  </React.StrictMode>
+  </React.StrictMode>,
 );

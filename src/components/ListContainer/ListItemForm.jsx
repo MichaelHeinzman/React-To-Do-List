@@ -1,37 +1,45 @@
-import React, { useState } from 'react'
-import { useTodoContext } from '../../context/todo.context'
+import React, { useState } from "react";
+import { useTodoContext } from "../../context/todo.context";
 
 const ListItemForm = ({ disableForm }) => {
   // Context
-  const { addItem } = useTodoContext()
+  const { addItem } = useTodoContext();
 
   // State
-  const [title, setTitle] = useState('')
-  const [description, setDescription] = useState('')
+  const [title, setTitle] = useState("");
+  const [description, setDescription] = useState("");
 
   // Methods
   const onFormSubmit = () => {
-    disableForm()
+    disableForm();
     addItem({
       title: title,
       description: description,
-    })
-  }
+    });
+  };
 
   return (
-    <div className="w-max flex flex-col bg-[#949f9b] p-3 rounded-md shadow-[#3f3f3f4e] shadow-md self-center gap-y-4" data-testid="list-item-form">
-      <h3 className="text-white font-bold text-center text-lg">To-Do Item Form</h3>
+    <div
+      className="flex w-max flex-col gap-y-4 self-center rounded-md bg-[#949f9b] p-3 shadow-md shadow-[#3f3f3f4e]"
+      data-testid="list-item-form"
+    >
+      <h3 className="text-center text-lg font-bold text-white">
+        To-Do Item Form
+      </h3>
 
       {/* Title */}
       <div className="mb-6 flex-col gap-2">
         <div className="md:w-1/3">
-          <label className="block text-gray-200 font-bold mb-1 md:mb-0 pr-4" htmlFor="inline-full-name">
+          <label
+            className="mb-1 block pr-4 font-bold text-gray-200 md:mb-0"
+            htmlFor="inline-full-name"
+          >
             Title
           </label>
         </div>
         <div className="md:w-full">
           <input
-            className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-[#5a7779]"
+            className="w-full appearance-none rounded border-2 border-gray-200 bg-gray-200 px-4 py-2 leading-tight text-gray-700 focus:border-[#5a7779] focus:bg-white focus:outline-none"
             id="inline-full-name"
             type="text"
             placeholder="Clean Room"
@@ -45,7 +53,7 @@ const ListItemForm = ({ disableForm }) => {
       <div className="mb-6 flex-col gap-2">
         <div className="md:w-1/3">
           <label
-            className="block text-gray-200 font-bold md:text-right mb-1 md:mb-0 pr-4"
+            className="mb-1 block pr-4 font-bold text-gray-200 md:mb-0 md:text-right"
             htmlFor="inline-password"
           >
             Description
@@ -53,7 +61,7 @@ const ListItemForm = ({ disableForm }) => {
         </div>
         <div className="md:w-full">
           <input
-            className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-[#5a7779]"
+            className="w-full appearance-none rounded border-2 border-gray-200 bg-gray-200 px-4 py-2 leading-tight text-gray-700 focus:border-[#5a7779] focus:bg-white focus:outline-none"
             id="inline-password"
             type="text"
             placeholder="******************"
@@ -63,22 +71,22 @@ const ListItemForm = ({ disableForm }) => {
         </div>
       </div>
 
-      <div className="flex self-center gap-3">
+      <div className="flex gap-3 self-center">
         <button
-          className="bg-gray-200 text-sm text-green-400 font-semibold p-2 rounded-md self-center hover:text-gray-200 hover:bg-green-400"
+          className="self-center rounded-md bg-gray-200 p-2 text-sm font-semibold text-green-400 hover:bg-green-400 hover:text-gray-200"
           onClick={onFormSubmit}
         >
           Submit
         </button>
         <button
-          className="bg-gray-200 text-sm text-red-400 font-semibold p-2 rounded-md self-center hover:text-gray-200 hover:bg-red-400"
+          className="self-center rounded-md bg-gray-200 p-2 text-sm font-semibold text-red-400 hover:bg-red-400 hover:text-gray-200"
           onClick={disableForm}
         >
           Cancel
         </button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ListItemForm
+export default ListItemForm;

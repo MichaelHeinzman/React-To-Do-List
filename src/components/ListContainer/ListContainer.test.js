@@ -32,7 +32,7 @@ describe("ListContainer Component", () => {
     render(
       <ListContainer>
         {(list) => <ChildrenComponent list={list} />}
-      </ListContainer>
+      </ListContainer>,
     );
 
     // Assert header and children components are rendered

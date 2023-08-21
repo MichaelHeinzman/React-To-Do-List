@@ -4,7 +4,7 @@ import ListItem from "./ListItem";
 const List = ({ list }) => {
   if (!list || list.length === 0)
     return (
-      <div className="w-full text-[#ffffff] text-center font-semibold">
+      <div className="w-full text-center font-semibold text-[#ffffff]">
         No items in list yet
       </div>
     );

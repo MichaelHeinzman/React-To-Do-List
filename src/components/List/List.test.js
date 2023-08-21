@@ -21,7 +21,7 @@ describe("List Component", () => {
       render(<List list={list} />);
       const noItemsText = screen.getByText(message);
       expect(noItemsText).toBeInTheDocument();
-    }
+    },
   );
 
   it("renders items when list isn't empty", () => {
