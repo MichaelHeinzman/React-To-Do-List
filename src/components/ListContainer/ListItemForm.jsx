@@ -23,10 +23,6 @@ const ListItemForm = ({ disableForm }) => {
       className="flex w-full flex-col gap-y-4 self-center rounded-md bg-[#ffffff] p-3 shadow-md shadow-[#3f3f3f4e]"
       data-testid="list-item-form"
     >
-      <h3 className="text-center text-lg font-bold text-white">
-        To-Do Item Form
-      </h3>
-
       {/* Title */}
       <div className="mb-6 flex-col gap-2">
         <div className="md:w-1/3">
